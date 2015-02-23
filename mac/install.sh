@@ -1,21 +1,29 @@
 #!/bin/sh
+if [ -d ~/.drumcommit ]; then
+rm -r ~/.drumcommit
+fi
+
 if [ ! -d ~/.drumcommit ]; then
 mkdir ~/.drumcommit
 fi
-if [ ! -f ~/.drumcommit/drumroll.wav ]; then
-cp ../drumroll.wav ~/.drumcommit/
-fi
-if [ ! -f $1/.git/hooks/pre-commit ]; then
-echo "" >> $1/.git/hooks/pre-commit
+
+if [ ! -d ~/.drumcommit/sounds ]; then
+cp -R ../sounds ~/.drumcommit/sounds
 fi
 
-if ! grep -Fxq "afplay ~/.drumcommit/drumroll.wav" $1/.git/hooks/pre-commit
-then
-echo "### drumcommit ###" >> $1/.git/hooks/pre-commit
-echo "afplay ~/.drumcommit/drumroll.wav" >> $1/.git/hooks/pre-commit
-echo "### end drumcommit ###" >> $1/.git/hooks/pre-commit
-chmod 755 $1/.git/hooks/pre-commit
+if [ ! -d ~/.drumcommit/mac ]; then
+cp -R ../linux ~/.drumcommit/mac
 fi
+
+if ! grep -Fxq "alias drumcommit='~/.drumcommit/mac/drumcommit.sh'" ~/.bashrc
+then
+echo "" >> ~/.bashrc
+echo "### drumcommit ###" >> ~/.bashrc
+echo "alias drumcommit='~/.drumcommit/mac/drumcommit.sh'" >> ~/.bashrc
+bash
+fi
+
+chmod +x ~/.drumcommit/mac/*.sh
 
 exit 0
 

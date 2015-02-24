@@ -10,8 +10,8 @@ then
 echo "### drumcommit ###" >> $DIR/.git/hooks/pre-push
 echo "afplay ~/.drumcommit/sounds/stage-clean.wav" >> $DIR/.git/hooks/pre-push
 echo "### end drumcommit ###" >> $DIR/.git/hooks/pre-push
-chmod 755 $DIR/.git/hooks/pre-push
 fi
+chmod 755 $DIR/.git/hooks/pre-push
 
 exit 0
 

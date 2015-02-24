@@ -25,5 +25,7 @@ fi
 
 chmod +x ~/.drumcommit/linux/*.sh
 
+echo "[drumcommit] SUCCESS"
+
 exit 0
 

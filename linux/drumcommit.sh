@@ -1,7 +1,13 @@
 #!/bin/bash
-if [ ! $1 ] 
+DIR=$(pwd)
+if [ ! -d $DIR/.git ]
 then
-  echo "missing options: checkout, commit, push"
+  echo "[drumcommit] ERROR: not a git repo"
+  exit 0
+elif [ ! $1 ] 
+then
+  echo "[drumcommit] ERROR: missing option. available: checkout, commit, push"
+  echo "[drumcommit] usage: drumcommit <option>"
 elif [ $1 = "push" ]
 then
   sh ~/.drumcommit/linux/push.sh
@@ -12,6 +18,6 @@ elif [ $1 = "checkout" ]
 then
   sh ~/.drumcommit/linux/checkout.sh
 else
-  echo "wrong options. available: checkout, commit, push"
+  echo "[drumcommit] ERROR: invalid option. available: checkout, commit, push"
 fi
 exit 0

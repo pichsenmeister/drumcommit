@@ -17,13 +17,15 @@ fi
 
 if ! grep -Fxq "alias drumcommit='~/.drumcommit/mac/drumcommit.sh'" ~/.bash_profile
 then
-echo "" >> ~/.bash_profile
-echo "### drumcommit ###" >> ~/.bash_profile
+echo "" >> ~/.bashrc
+echo "### drumcommit ###" >> ~/.bashrc
 echo "alias drumcommit='~/.drumcommit/mac/drumcommit.sh'" >> ~/.bash_profile
 source ~/.bash_profile
 fi
 
 chmod +x ~/.drumcommit/mac/*.sh
+
+echo "[drumcommit] SUCCESS"
 
 exit 0
 

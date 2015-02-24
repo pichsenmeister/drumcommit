@@ -17,7 +17,9 @@ echo "### drumcommit ###" >> $DIR/.git/hooks/pre-commit
 echo "aplay ~/.drumcommit/sounds/drumroll.wav" >> $DIR/.git/hooks/pre-commit
 echo "### end drumcommit ###" >> $DIR/.git/hooks/pre-commit
 fi
+
 chmod 755 $DIR/.git/hooks/pre-commit
+echo "[drumcommit] pre-commit hook installed"
 
 exit 0
 

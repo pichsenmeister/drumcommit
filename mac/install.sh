@@ -17,8 +17,8 @@ fi
 
 if ! grep -Fxq "alias drumcommit='~/.drumcommit/mac/drumcommit.sh'" ~/.bash_profile
 then
-echo "" >> ~/.bashrc
-echo "### drumcommit ###" >> ~/.bashrc
+echo "" >> ~/.bash_profile
+echo "### drumcommit ###" >> ~/.bash_profile
 echo "alias drumcommit='~/.drumcommit/mac/drumcommit.sh'" >> ~/.bash_profile
 source ~/.bash_profile
 fi

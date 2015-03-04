@@ -25,9 +25,9 @@ sh install.sh
 
 at the moment, you can install 3 different hooks
 
-# commit - plays the original drumcommit drumroll sound on every commit
-# checkout - play a sound everytime you switch branches
-# push - plays a sound everytime you push
+* commit - plays the original drumcommit drumroll sound on every commit
+* checkout - play a sound everytime you switch branches
+* push - plays a sound everytime you push
 
 to install these hooks, ```cd``` to your git repository's home folder, then type
 
@@ -35,10 +35,10 @@ to install these hooks, ```cd``` to your git repository's home folder, then type
 drumcommit <option>
 ```
 
-where <option> can be either commit, checkout or push
+where ```<option>``` can be either commit, checkout or push
 
 
-AND:
+#### AND:
 Don't forget to spread and/or star this little tool, if you like it ;)
 
 

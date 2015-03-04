@@ -2,9 +2,7 @@
 
 thanks for using drumcommit.
 
-drumcommit is a little tool for git cli users on linux and mac.
-
-it shows your coworkers, that you are working hard by playing different sounds on git commit, checkout and push.
+drumcommit is a little tool for git cli users on linux and mac. it shows your coworkers, that you are working hard by playing different sounds on git commit, checkout and push.
 
 
 have fun!

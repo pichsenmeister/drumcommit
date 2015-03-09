@@ -12,7 +12,7 @@ cp -R ../sounds ~/.drumcommit/sounds
 fi
 
 if [ ! -d ~/.drumcommit/mac ]; then
-cp -R ../linux ~/.drumcommit/mac
+cp -R ../mac ~/.drumcommit/mac
 fi
 
 if ! grep -Fxq "alias drumcommit='~/.drumcommit/mac/drumcommit.sh'" ~/.bash_profile

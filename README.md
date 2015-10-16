@@ -18,8 +18,7 @@ git clone https://github.com/3x14159265/drumcommit.git
 install drumcommit via terminal
 
 ```
-cd drumcommit/<linux|mac>
-sh install.sh 
+sh install.sh
 ```
 
 ### usage
@@ -41,5 +40,3 @@ where ```<option>``` can be either commit, checkout or push
 
 #### AND:
 Don't forget to spread and/or star this little tool, if you like it ;)
-
-

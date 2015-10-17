@@ -8,6 +8,6 @@ fi
 
 if [ $OS = "Darwin" ]; then
   ./mac/install.sh
-elif [ $OS = "Debian" -o $OS = "Ubuntu" -o "Linux" ]; then
+elif [ $OS = "Debian" -o $OS = "Ubuntu" -o $OS = "Linux" ]; then
   ./linux/install.sh
 fi

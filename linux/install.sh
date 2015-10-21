@@ -8,11 +8,11 @@ mkdir ~/.drumcommit
 fi
 
 if [ ! -d ~/.drumcommit/sounds ]; then
-cp -R ../sounds ~/.drumcommit/sounds
+cp -R ./sounds ~/.drumcommit/sounds
 fi
 
 if [ ! -d ~/.drumcommit/linux ]; then
-cp -R ../linux ~/.drumcommit/linux
+cp -R ./linux ~/.drumcommit/linux
 fi
 
 if ! grep -Fxq "alias drumcommit='~/.drumcommit/linux/drumcommit.sh'" ~/.bashrc
@@ -28,4 +28,3 @@ chmod +x ~/.drumcommit/linux/*.sh
 echo "[drumcommit] SUCCESS"
 
 exit 0
-

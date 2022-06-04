@@ -17,6 +17,11 @@ then
 elif [ $1 = "checkout" ]
 then
   sh ~/.drumcommit/mac/checkout.sh
+elif [ $1 = "all" ]
+then
+  sh ~/.drumcommit/linux/commit.sh
+  sh ~/.drumcommit/linux/checkout.sh
+  sh ~/.drumcommit/linux/push.sh   
 else
   echo "[drumcommit] ERROR: invalid option. available: checkout, commit, push"
 fi
